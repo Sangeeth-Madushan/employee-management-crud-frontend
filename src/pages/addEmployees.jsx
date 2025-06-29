@@ -28,7 +28,7 @@ function AddEmployees() {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      await axios.post("http://localhost:5000/api/employees", formData);
+      await axios.post("https://employee-management-crud-backend-production.up.railway.app/api/employees", formData);
       toast.success("Employee added successfully");
       navigate("/");
     } catch (error) {

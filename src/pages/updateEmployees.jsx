@@ -23,7 +23,7 @@ function UpdateEmployee() {
   useEffect(() => {
     const fetchEmployee = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/employees/" +employeeId);
+        const response = await axios.get("https://employee-management-crud-backend-production.up.railway.app/api/employees/" +employeeId);
         setFormData(response.data);
         setIsLoading(false);
       } catch (error) {
@@ -44,7 +44,7 @@ function UpdateEmployee() {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      await axios.put("http://localhost:5000/api/employees/" +employeeId, formData);
+      await axios.put("https://employee-management-crud-backend-production.up.railway.app/api/employees/" +employeeId, formData);
       toast.success("Employee updated successfully");
       navigate("/");
     } catch (error) {

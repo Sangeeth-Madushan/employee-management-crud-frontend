@@ -23,7 +23,7 @@ function Employee() {
   // Fetch all employees
   const fetchEmployees = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/employees");
+      const res = await axios.get("https://employee-management-crud-backend-production.up.railway.app/api/employees");
       setEmployees(res.data);
     } catch (error) {
       console.error("Fetch error:", error);
@@ -39,7 +39,7 @@ function Employee() {
   // Delete employee
   async function handleDelete(employeeId) {
     try {
-      await axios.delete("http://localhost:5000/api/employees/" + employeeId);
+      await axios.delete("https://employee-management-crud-backend-production.up.railway.app/api/employees/" + employeeId);
       toast.success("Employee deleted successfully");
       setEmployees(employees.filter((item) => item.employeeId !== employeeId));
     } catch (error) {
@@ -59,7 +59,7 @@ function Employee() {
 
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/employees/search/" + query
+        "https://employee-management-crud-backend-production.up.railway.app/api/employees/search/" + query
       );
       setEmployees(res.data);
     } catch (error) {
