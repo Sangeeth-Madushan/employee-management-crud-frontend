@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import Loading from "../components/loadHome";
 import Navbar from "../components/navbar";
-import Sidebar from "../components/sideBar";
+import Sidebar from "../components/sidebar";
 import {
   FiSearch,
   FiX,
@@ -81,7 +81,7 @@ function Employee() {
   return (
     <div className="flex h-screen bg-gray-100 overflow-hidden">
       {/* Fixed Sidebar */}
-      <Sidebar />
+      <Sidebar/>
 
       <div className="flex-1 flex flex-col overflow-hidden">
         {/* Fixed Navbar */}
