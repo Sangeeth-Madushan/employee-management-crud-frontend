@@ -11,6 +11,8 @@ import {
   FiSettings,
 } from "react-icons/fi";
 
+import { FaTowerCell } from "react-icons/fa6";
+
 function Sidebar() {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
@@ -42,7 +44,13 @@ function Sidebar() {
         {/* Logo/Brand */}
         <div className="flex justify-between items-center h-16 px-4">
           {(!isCollapsed || isMobileOpen) && (
-            <div className="text-xl font-bold">Worksy</div>
+            <div className="flex items-center gap-2">
+              {/* Option 1: Using an image */}
+              <div className="flex items-center gap-2">
+                <FaTowerCell className="text-[#0056a2] text-xl" />
+                <div className="text-xl font-bold">Telecom</div>
+              </div>
+            </div>
           )}
           <button
             onClick={toggleSidebar}

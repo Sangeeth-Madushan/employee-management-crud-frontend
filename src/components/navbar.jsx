@@ -42,7 +42,7 @@ function Navbar() {
             />
             <span className="absolute bottom-0 right-0 w-3 h-3 bg-[#50b748] rounded-full border-2 border-white"></span>
           </div>
-          <span className="text-gray-700 font-medium hidden md:block">Riyad</span>
+          <span className="text-gray-700 font-medium hidden md:block">Admin</span>
         </div>
       </div>
     </header>
