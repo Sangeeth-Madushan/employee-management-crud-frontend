@@ -123,7 +123,8 @@ function Employee() {
                   </div>
                   <button
                     onClick={() => navigate("/add-employee")}
-                    className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-sm"
+                    className="bg-gray-100 border border-green-600 text-gray-800 hover:bg-gray-200 hover:border-green-700 px-4 py-2 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-sm"
+
                   >
                     <FiPlus className="w-5 h-5" />
                     Add Employee
@@ -132,7 +133,6 @@ function Employee() {
               </div>
             </div>
 
-            {/* Scrollable Employee Table */}
             {/* Scrollable Employee Table */}
             <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
               <div className="overflow-x-auto">
