@@ -221,7 +221,7 @@ function UpdateEmployee() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`inline-flex items-center px-4 py-2.5 border border-transparent text-sm font-medium rounded-lg shadow-sm text-white bg-[#50b748] hover:bg-[#3e9e36] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#50b748] transition-colors ${isSubmitting ? 'opacity-75 cursor-not-allowed' : ''}`}
+                className={`inline-flex items-center px-4 py-2.5 border border-transparent text-sm font-medium rounded-lg shadow-sm text-gray-800 bg-gray-300 hover:bg-[#3e9e36] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#50b748] transition-colors ${isSubmitting ? 'opacity-75 cursor-not-allowed' : ''}`}
               >
                 {isSubmitting ? (
                   <>

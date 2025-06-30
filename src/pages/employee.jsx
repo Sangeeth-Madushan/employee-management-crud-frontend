@@ -123,7 +123,7 @@ function Employee() {
                   </div>
                   <button
                     onClick={() => navigate("/add-employee")}
-                    className="bg-gray-100 border border-green-600 text-gray-800 hover:bg-gray-200 hover:border-green-700 px-4 py-2 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-sm"
+                    className="bg-gray-100 border border-green-600 text-gray-800 hover:bg-green-500 hover:border-green-800 px-4 py-2 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-sm"
 
                   >
                     <FiPlus className="w-5 h-5" />
